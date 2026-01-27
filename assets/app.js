@@ -3,17 +3,22 @@ import './styles/app.css';
 
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
 
-document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.querySelector('.menu-toggle');
+ document.addEventListener('DOMContentLoaded', () => {
+  /*const toggle = document.querySelector('.menu-toggle');*/
+    const menu = document.querrySelector('#navbarMenu');
 
   if (!toggle) return;
 
-  toggle.addEventListener('click', () => {
-    toggle.classList.toggle('opened');
+  /*toggle.addEventListener('click', () => {
+    toggle.classList.toggle('opened');*/
+    menu.addEventListener('show.bs.collapse', () => {
+    });
+    menu.addEvenListener('hidden.bs.collapse',() => {
   });
 });
 
 /*ouverture menu de navigation */
+
 const toggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('#menu');
 
@@ -33,3 +38,7 @@ document.addEventListener('click', (e) => {
     toggle.setAttribute('aria-expanded', 'false');
   }
 });
+
+
+
+

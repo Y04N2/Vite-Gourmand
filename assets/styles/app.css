@@ -1,7 +1,15 @@
 
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 body {
-    background: #ffff
-    ;
+    background: #ffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 nav.navbar { 
@@ -38,6 +46,9 @@ nav.navbar .navbar-brand img{
     z-index: 1000;
     top: 50%;
 }
+
+/* boutton hamburger */
+
 .menu-toggle span {
     display: block;
     height: 3px;
@@ -118,3 +129,18 @@ nav.navbar .navbar-brand img{
 #menu, #menu a, .navbar-brand {
     font-family: 'Roboto', sans-serif;
 }
+
+/* Footer */
+
+footer{
+
+    height: 64px;
+    font-family: 'Roboto', sans-serif;
+    
+    justify-content: space-between;
+    padding: 0 1rem;
+    background: #DDB892;
+    border-radius: 5px;
+
+}
+

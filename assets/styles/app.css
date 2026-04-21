@@ -1,7 +1,7 @@
 /*CSS classique */
 
 .navbar {
-    background: #fff;
+    background: #e36f6f;
     border-bottom: 1px solid #ddd;
 }
 
@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: aquamarine;
 }
 
 .logo img {

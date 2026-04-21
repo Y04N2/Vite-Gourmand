@@ -1,31 +1,35 @@
-{#navbar#}
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="#">
+
+<nav class="navbar">
+	<div class="nav-container">
+
+		<a class="logo" href="#">
 			<img src="{{ asset('images/Logo.svg') }}" alt="Vite&Gourmand" width="170" height="90">
 		</a>
-		<button class="navbar-toggler menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="ouvrir le menu">
+
+		<button class="menu-toggle" type="button" aria-label="ouvrir le menu">
 			<span class="bar-top"></span>
 			<span class="bar-middle"></span>
 			<span class="bar-bottom"></span>
 		</button>
 
-		<div class="collapse navbar-collapse" id="navbarMenu">
-			<ul id="menu" class="navbar-nav ms-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Accueil</a>
+		<div class="navdrop" id="navbarMenu">
+			<ul class="navlist">
+				<li>
+					<a href="#">Accueil</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Menu</a>
+				<li>
+					<a href="#">Menu</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Connexion</a>
+				<li>
+					<a href="#">Connexion</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Contact</a>
+				<li>
+					<a href="#">Contact</a>
 				</li>
 			</ul>
 		</div>
+
 	</div>
 </nav>
+
 

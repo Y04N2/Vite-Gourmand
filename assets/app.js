@@ -1,4 +1,4 @@
-
+import './styles/app.css';
 
 document.addEventListener('DOMContentLoaded', () => {
     const btn = document.querySelector('.menu-toggle');

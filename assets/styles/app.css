@@ -34,8 +34,8 @@
 }
 
 .menu-toggle {
-    display: block;
-    background: blue;
+    display: none;
+    background: none;
     border: black;
     cursor: pointer;
 }

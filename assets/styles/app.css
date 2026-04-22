@@ -34,15 +34,18 @@
 }
 
 .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
+    display: block;
+    background: blue;
+    border: black;
     cursor: pointer;
 }
 
+.navdrop {
+    display: block;
+}
 /* Mobile responsive */
 
-@media (max-width:768px) {
+@media (max-width:1000px) {
 
     .menu-toggle {
         display: flex;
@@ -58,7 +61,7 @@
     }
 
     .navdrop {
-        display: block;
+        display: none;
         width: 100%;
     }
 
@@ -72,7 +75,8 @@
 
     .navlist {
         flex-direction: column;
-        padding-top: 15px;
+        padding-top: center;
         align-items: center;
+        padding-top: 15px;
     }
 }

@@ -1,4 +1,4 @@
-/*CSS classique */
+/* CSS classique */
 
 .navbar {
     background: #e36f6f;
@@ -33,16 +33,47 @@
     font-weight: 600;
 }
 
-.menu-toggle {
-    display: none;
-    background: none;
-    border: black;
-    cursor: pointer;
-}
-
 .navdrop {
     display: block;
 }
+
+/* Bouton burger */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #000;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle .bar-top,
+.menu-toggle .bar-middle {
+    margin-bottom: 5px;
+}
+
+/* Animation en croix quand le bouton a la classe "active" */
+.menu-toggle.active .bar-top {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active .bar-middle {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar-bottom {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 /* Mobile responsive */
 
 @media (max-width:1000px) {
@@ -50,23 +81,19 @@
     .menu-toggle {
         display: flex;
         flex-direction: column;
-        gap: 5px;
-    }
-
-    .menu-toggle span {
-        width: 28px;
-        height: 3px;
-        background: #000;
-        display: block;
+        gap: 0;
     }
 
     .navdrop {
-        display: none;
+        max-height: 0;
+        overflow: hidden;
         width: 100%;
+        transition: max-height 0.3s ease;
     }
 
     .navdrop.open {
-        display: block;
+        max-height: 300px;
+        /* ajuste selon le nombre de liens */
     }
 
     .nav-container {
@@ -75,7 +102,6 @@
 
     .navlist {
         flex-direction: column;
-        padding-top: center;
         align-items: center;
         padding-top: 15px;
     }

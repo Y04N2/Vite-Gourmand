@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btn && menu) {
         btn.addEventListener('click', () => {
             menu.classList.toggle('open');
+            btn.classList.toggle('active');
+
+            const isOpen = menu.classList.contains('open')
+            btn.setAttribute('aria-expanded', isOpen);
         });
     }
 });
